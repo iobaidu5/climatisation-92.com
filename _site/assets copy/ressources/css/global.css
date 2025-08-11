@@ -6200,7 +6200,7 @@ button.close {
   }
 
   .middle{
-    top: 48% !important;
+    top: 52% !important;
   }
 
   .contact{
@@ -6213,7 +6213,7 @@ button.close {
 
 @media (max-width:992px) {
   section.carousel .item{
-    height: 1100px !important; 
+    height: 1150px !important; 
   }
 }
 
