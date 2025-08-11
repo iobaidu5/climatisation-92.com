@@ -289,7 +289,7 @@
                       </div>
                     </div>
                     <div id="contact-form-response"></div>
-                    <div class="form-group" style="display: flex; margin-left: 10px;">
+                    <div class="form-group" style="display: flex; margin-left: 10px; overflow-x: hidden;">
                       <div class="g-recaptcha" data-sitekey="6LexXqErAAAAAFms0y8vnE539mC373U_1hxMQz75">
                       </div>
                       <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
@@ -700,7 +700,15 @@
 
           <!-- <form role="form" method="post" action="#pre-contact" > -->
 
-          <form action="https://formspree.io/f/xeogoqjn" method="POST">
+            <form class="form contact_content-form" id="contactForm" method="post"
+            action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
+            <input type="hidden" name="lang" value="fr" />
+            <input type="hidden" name="redirectUrl" value="/message-envoye" />
+            <input type="hidden" name="type" value="contact" />
+            <input type="hidden" name="website" value="" />
+            <input type="hidden" name="lang" value="fr" />
+            <input type="hidden" name="firstName" value="" />
+            <input type="hidden" name="key" value="6LexXqErAAAAAFvakF5RNbg9ozM1Ki24sqInowVk" />
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group has-feedback ">
@@ -733,8 +741,26 @@
               </div>
 
             </div>
-
-            <div class="div01"></div>
+            <div class="row ">
+              <div class="col-xs-12">
+                <div class="row justify-content-center">
+                  <div class="checkbox" style="display: flex; margin-top: 0 !important; margin-bottom: 0 !important; ">
+                    <input name="condition" type="checkbox"
+                      style="height:1.5rem; text-align: left; width:1.5rem; vertical-align: middle; margin-right: 1rem; margin-left: 1rem;" />
+                    <span class="contact_content-form--label" style="font-size: 1.2rem !important; font-weight: 400 !important; color: #000; margin-right: 5rem; ">
+                      En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                      de vos données par ce site * </span>
+                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div id="contact-form-response"></div>
+                <div class="form-group" style="display: flex; margin-left: 10px; overflow-x: hidden;">
+                  <div class="g-recaptcha" data-sitekey="6LexXqErAAAAAFms0y8vnE539mC373U_1hxMQz75">
+                  </div>
+                  <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
+                </div>
+              </div>
+            </div>
             <div class="row ">
               <div class="col-xs-12 text-center">
                 <button type="submit" name="precontact" class="btn button"> Envoyer </button>
