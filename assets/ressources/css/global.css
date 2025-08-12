@@ -7570,6 +7570,13 @@ section.slidePage8 {
     margin-top: 0 !important;
   }
 
+  .to-be-in-line{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+
+  }
+
   .up{
     bottom: 140px !important;
     padding: 2px 10px !important;
@@ -7584,6 +7591,12 @@ section.slidePage8 {
   }
 }
 
+
+@media (max-width:767px) {
+  .pos1{
+    margin-top: -70px !important; 
+  }
+}
 
 
 
